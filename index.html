@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Functional Personal Bank</title>
+  </head>
+  <body class="bg-lime-100">
+    <header>
+      <h1 class="text-2xl text-center mt-8">
+        Welcome to
+        <span class="text-3xl text-green-600">Functional Personal Bank</span>
+      </h1>
+    </header>
+    <section class="w-3/4 mx-auto mt-12">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-lime-400 p-8 rounded-lg">
+          <h4 class="text-4xl">Deposite</h4>
+          <h2 class="text-4xl">$ <span id="deposite-total">00</span></h2>
+        </div>
+        <div class="bg-green-600 p-8 rounded-lg">
+          <h4 class="text-4xl">Withdraw</h4>
+          <h2 class="text-4xl">$ <span id="withdraw-total">00</span></h2>
+        </div>
+        <div class="bg-lime-600 p-8 rounded-lg">
+          <h4 class="text-4xl">Balance</h4>
+          <h2 class="text-4xl">$ <span id="balance-total">00</span></h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12 w-3/4 mx-auto">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-lime-600 p-8 rounded-lg">
+          <h3 class="text-4xl">Your Deposite</h3>
+          <input
+            id="deposite-field"
+            class="mt-5 w-3/5 px-4 py-3 rounded-lg"
+            type="text"
+            placeholder="$ you want to deposite "
+          />
+          <button
+            id="btn-deposite"
+            class="border-[1px] border-solid border-transparent hover:border-white hover:bg-lime-900 hover:text-white block bg-lime-200 px-6 py-3 rounded-lg mt-5"
+          >
+            Deposite
+          </button>
+        </div>
+        <div class="bg-emerald-600 p-8 rounded-lg">
+          <h3 class="text-4xl">Your Withdraw</h3>
+          <input
+            id="withdraw-field"
+            class="mt-5 w-3/5 px-4 py-3 rounded-lg"
+            type="text"
+            placeholder="$ you want to withdraw "
+          />
+          <button
+            id="btn-withdraw"
+            class="border-[1px] border-solid border-transparent hover:border-white hover:bg-lime-900 hover:text-white block bg-lime-200 px-6 py-3 rounded-lg mt-5"
+          >
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="js/deposite.js"></script>
+    <script src="js/withdraw.js"></script>
+    <script src="js/utilities.js"></script>
+  </body>
+</html>
